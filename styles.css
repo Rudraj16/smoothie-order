@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #3498db;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+select,
+input[type="radio"],
+button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Output and Bill Styles */
+#output,
+#bill {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+}
+
+#bill p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Smoothie Image Styles */
+#smoothieImage {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Set a height for the image container */
+    background-size: cover;
+}
+
+/* Add background images for each flavor */
+#smoothieImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+#smoothieImage[flavor="strawberry"]::before {
+    background-image: url('/images/strawberry-smoothie.jpg');
+}
+
+#smoothieImage[flavor="banana"]::before {
+    background-image: url('/images/banana-smoothie.jpg');
+}
+
+#smoothieImage[flavor="mango"]::before {
+    background-image: url('/images/mango-smoothie.jpg');
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #3498db;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+select,
+input[type="radio"],
+button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Output and Bill Styles */
+#output,
+#bill {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+}
+
+#bill p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Smoothie Image Styles */
+#smoothieImageContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#smoothieImage {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    background-size: cover;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+

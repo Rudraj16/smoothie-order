@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smoothie Order</title>
+</head>
+
+<body>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+        <label for="flavor">Select Flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+        </select>
+
+        <label for="size">Select Size:</label>
+        <input type="radio" id="small" name="size" value="small" checked>
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label>
+
+        <label for="extras">Extras (select multiple):</label>
+        <select id="extras" name="extras" multiple>
+            <option value="protein">Protein Powder</option>
+            <option value="spinach">Spinach</option>
+            <option value="almondMilk">Almond Milk</option>
+        </select>
+
+        <button type="button" onclick="orderSmoothie()">Order</button>
+    </form>
+
+    <!-- Add a div for the bill -->
+    <div id="bill"></div>
+
+    <div id="output"></div>
+
+    <!-- Add a div for the smoothie image -->
+    <div id="smoothieImage" flavor=""></div>
+
+    <footer>
+        <p>&copy; 2023 Smoothie Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
